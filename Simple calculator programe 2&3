@@ -1,0 +1,54 @@
+Ask for input
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Choose operation (+, -, *, /): ")
+
+Perform operation
+if operation == "+":
+    result = num1 + num2
+    print(f"{num1} + {num2} = {result}")
+elif operation == "-":
+    result = num1 - num2
+    print(f"{num1} - {num2} = {result}")
+elif operation == "*":
+    result = num1 * num2
+    print(f"{num1} * {num2} = {result}")
+elif operation == "/":
+    if num2 != 0:
+        result = num1 / num2
+        print(f"{num1} / {num2} = {result}")
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Invalid operation. Please use +, -, * or /.")
+Get user inputs
+num1 = float(input("Enter first number: "))   # e.g. 10
+num2 = float(input("Enter second number: "))  # e.g. 5
+operator = input("Enter operation (+, -, *, /): ")  # e.g. +
+
+Perform calculation
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Cannot divide by zero"
+else:
+    result = "Invalid operation"
+
+Display result
+print(f"{num1} {operator} {num2} = {result}")
+
+
+Example input/output:
+
+
+Enter first number: 10
+Enter second number: 5
+Enter operation (+, -, *, /): +
+10.0 + 5.0 = 15.0
